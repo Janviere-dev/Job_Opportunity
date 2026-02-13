@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{degisination}",
+ "creation": "2026-02-13 10:42:58.904275",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "degisination",
+  "profession",
+  "column_break_dbre",
+  "location",
+  "region",
+  "country",
+  "column_break_mgea",
+  "posted_on",
+  "closed_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "degisination",
+   "fieldtype": "Select",
+   "label": "Degisination",
+   "options": "Accountant\nCholera Responder\nClinician\nCountry Coordinator\nDesigner\nFrappe Developer\nFrappe Froent End Developer\nManaging Director\nMarketing Specialist\nNutrition\nPresident\nProduct Manger\nProject Manager\nRCAT\nResearcher\nSales Representative\nSecretary\nShadow county coordinator\nSoftware developer\nVice President\nVolunteer\nWordPress Developer"
+  },
+  {
+   "fieldname": "profession",
+   "fieldtype": "Link",
+   "label": "Profession",
+   "options": "Profession"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Adress"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Data",
+   "label": "Region"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "posted_on",
+   "fieldtype": "Date",
+   "label": "Posted On"
+  },
+  {
+   "fieldname": "closed_on",
+   "fieldtype": "Date",
+   "label": "Closed On"
+  },
+  {
+   "fieldname": "column_break_dbre",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mgea",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-13 23:33:32.515642",
+ "modified_by": "Administrator",
+ "module": "OneRC",
+ "name": "Opportunity",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Opportunity Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Applicant",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

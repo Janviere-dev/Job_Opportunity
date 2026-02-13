@@ -1,0 +1,194 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Applicant-{last_name}-{###}",
+ "creation": "2026-02-13 16:45:22.176712",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "personal_info_tab",
+  "first_name",
+  "branchcountry",
+  "date_of_birth",
+  "number_of_dependants",
+  "krcs_insurance",
+  "column_break_xhok",
+  "last_name",
+  "phone_number",
+  "gender",
+  "mobile_moneympesa_phone_if_different",
+  "column_break_wqym",
+  "email",
+  "marital_status",
+  "blood_group",
+  "column_break_anyw",
+  "additional_information_tab",
+  "access_to_internet",
+  "column_break_xxld",
+  "profession"
+ ],
+ "fields": [
+  {
+   "fieldname": "personal_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Personal Info"
+  },
+  {
+   "fieldname": "branchcountry",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Branch/country",
+   "options": "Adress",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_xhok",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Gender",
+   "options": "Female\nMale\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_wqym",
+   "fieldtype": "Column Break",
+   "is_virtual": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "additional_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "number_of_dependants",
+   "fieldtype": "Int",
+   "label": "Number of Dependants",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "krcs_insurance",
+   "fieldtype": "Select",
+   "label": "KRCS Insurance",
+   "options": "No\nYes"
+  },
+  {
+   "fieldname": "mobile_moneympesa_phone_if_different",
+   "fieldtype": "Phone",
+   "label": "Mobile Money(MPesa) phone if different"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "options": "Single\nMarried\nDivorced\nWidowed"
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Select",
+   "label": "Blood Group",
+   "options": "A+\nA-\nB+\nB-\nO+\nO-\nAB+\nAB-"
+  },
+  {
+   "fieldname": "column_break_anyw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "access_to_internet",
+   "fieldtype": "Select",
+   "label": "Access to internet",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "column_break_xxld",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "profession",
+   "fieldtype": "Link",
+   "label": "Profession",
+   "options": "Profession"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First_name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last_name"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-13 22:31:32.960911",
+ "modified_by": "Administrator",
+ "module": "OneRC",
+ "name": "Volunteer Signup",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Applicant",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Opportunity Manager",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

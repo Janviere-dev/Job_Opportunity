@@ -1,0 +1,65 @@
+{
+ "allow_comments": 0,
+ "allow_delete": 0,
+ "allow_edit": 0,
+ "allow_incomplete": 0,
+ "allow_multiple": 0,
+ "allow_print": 0,
+ "anonymous": 0,
+ "apply_document_permissions": 0,
+ "button_label": "Save",
+ "condition_json": "[]",
+ "creation": "2026-02-13 12:32:06.866168",
+ "doc_type": "Opportunity",
+ "docstatus": 0,
+ "doctype": "Web Form",
+ "idx": 0,
+ "is_standard": 1,
+ "list_columns": [
+  {
+   "fieldname": "degisination",
+   "fieldtype": "Select",
+   "label": "Degisination"
+  },
+  {
+   "fieldname": "profession",
+   "fieldtype": "Select",
+   "label": "Profession"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location"
+  },
+  {
+   "fieldname": "posted_on",
+   "fieldtype": "Date",
+   "label": "Posted On"
+  },
+  {
+   "fieldname": "closed_on",
+   "fieldtype": "Date",
+   "label": "Closed On"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Data",
+   "label": "Region"
+  }
+ ],
+ "list_title": "Opportunity",
+ "login_required": 1,
+ "max_attachment_size": 0,
+ "modified": "2026-02-13 13:59:28.330195",
+ "modified_by": "Administrator",
+ "module": "OneRC",
+ "name": "opportunity",
+ "owner": "Administrator",
+ "published": 1,
+ "route": "opportunity",
+ "show_attachments": 0,
+ "show_list": 1,
+ "show_sidebar": 0,
+ "title": "Opportunity",
+ "web_form_fields": []
+}
