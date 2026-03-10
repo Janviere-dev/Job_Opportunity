@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Open Opportunities</title>
+	<link rel="stylesheet" href="/assets/onerc/css/opportunities.css">
+</head>
+<body>
+	<section class="opportunity-page">
+		<header class="opportunity-header">
+			<h1>Opportunities (<span id="open-opportunities-count">0 opportunities</span>)</h1>
+			<p>Find volunteer opportunities and apply in one click.</p>
+			<input id="opportunity-search" type="search" placeholder="Search by title, location, profession..." />
+		</header>
+
+		<main>
+			<div id="opportunity-list" class="opportunity-grid"></div>
+			<p id="opportunity-empty" class="empty-state" hidden>No opportunities found.</p>
+		</main>
+	</section>
+
+	<script src="/assets/onerc/js/opportunities.js"></script>
+</body>
+</html>

@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:posts",
  "creation": "2026-02-28 16:36:08.685708",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,16 +13,18 @@
    "fieldname": "posts",
    "fieldtype": "Link",
    "label": "Posts",
-   "options": "Opportunity"
+   "options": "Opportunity",
+   "unique": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-28 16:36:40.179300",
+ "modified": "2026-03-10 07:24:38.493149",
  "modified_by": "Administrator",
  "module": "OneRC",
  "name": "Opportunity post",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
