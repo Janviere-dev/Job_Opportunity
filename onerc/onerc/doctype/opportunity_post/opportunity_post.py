@@ -5,7 +5,5 @@
 from frappe.model.document import Document
 
 
-
-
-class Opportunity(Document):
-    pass
+class Opportunitypost(Document):
+	pass

@@ -21,11 +21,11 @@
   "email",
   "marital_status",
   "blood_group",
-  "column_break_anyw",
   "additional_information_tab",
   "access_to_internet",
   "column_break_xxld",
-  "profession"
+  "profession",
+  "amended_from"
  ],
  "fields": [
   {
@@ -94,7 +94,8 @@
    "fieldname": "krcs_insurance",
    "fieldtype": "Select",
    "label": "KRCS Insurance",
-   "options": "No\nYes"
+   "options": "No\nYes",
+   "reqd": 1
   },
   {
    "fieldname": "mobile_moneympesa_phone_if_different",
@@ -105,23 +106,22 @@
    "fieldname": "marital_status",
    "fieldtype": "Select",
    "label": "Marital Status",
-   "options": "Single\nMarried\nDivorced\nWidowed"
+   "options": "Single\nMarried\nDivorced\nWidowed",
+   "reqd": 1
   },
   {
    "fieldname": "blood_group",
    "fieldtype": "Select",
    "label": "Blood Group",
-   "options": "A+\nA-\nB+\nB-\nO+\nO-\nAB+\nAB-"
-  },
-  {
-   "fieldname": "column_break_anyw",
-   "fieldtype": "Column Break"
+   "options": "A+\nA-\nB+\nB-\nO+\nO-\nAB+\nAB-",
+   "reqd": 1
   },
   {
    "fieldname": "access_to_internet",
    "fieldtype": "Select",
    "label": "Access to internet",
-   "options": "Yes\nNo"
+   "options": "Yes\nNo",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_xxld",
@@ -131,23 +131,37 @@
    "fieldname": "profession",
    "fieldtype": "Link",
    "label": "Profession",
-   "options": "Profession"
+   "options": "Profession",
+   "reqd": 1
   },
   {
    "fieldname": "first_name",
    "fieldtype": "Data",
-   "label": "First_name"
+   "label": "First_name",
+   "reqd": 1
   },
   {
    "fieldname": "last_name",
    "fieldtype": "Data",
-   "label": "Last_name"
+   "label": "Last_name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Volunteer Signup",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2026-02-13 22:31:32.960911",
+ "modified": "2026-03-08 19:57:27.638418",
  "modified_by": "Administrator",
  "module": "OneRC",
  "name": "Volunteer Signup",
@@ -168,13 +182,16 @@
   },
   {
    "create": 1,
+   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Applicant",
-   "share": 1
+   "role": "Vulonteer",
+   "share": 1,
+   "submit": 1,
+   "write": 1
   },
   {
    "email": 1,

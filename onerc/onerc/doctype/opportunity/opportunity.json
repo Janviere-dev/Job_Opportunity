@@ -8,6 +8,7 @@
  "field_order": [
   "degisination",
   "profession",
+  "status",
   "column_break_dbre",
   "location",
   "region",
@@ -20,40 +21,50 @@
   {
    "fieldname": "degisination",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Degisination",
-   "options": "Accountant\nCholera Responder\nClinician\nCountry Coordinator\nDesigner\nFrappe Developer\nFrappe Froent End Developer\nManaging Director\nMarketing Specialist\nNutrition\nPresident\nProduct Manger\nProject Manager\nRCAT\nResearcher\nSales Representative\nSecretary\nShadow county coordinator\nSoftware developer\nVice President\nVolunteer\nWordPress Developer"
+   "options": "Accountant\nCholera Responder\nClinician\nCountry Coordinator\nDesigner\nFrappe Developer\nFrappe Frontend Developer\nManaging Director\nMarketing Specialist\nNutrition\nPresident\nProduct Manger\nProject Manager\nRCAT\nResearcher\nSales Representative\nSecretary\nShadow county coordinator\nSoftware developer\nVice President\nVolunteer\nWordPress Developer",
+   "reqd": 1
   },
   {
    "fieldname": "profession",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Profession",
-   "options": "Profession"
+   "options": "Profession",
+   "reqd": 1
   },
   {
    "fieldname": "location",
-   "fieldtype": "Link",
+   "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Location",
-   "options": "Adress"
+   "options": "Bomet\nKaragita\nKillifi\nKitui\nMachakos\nNairobi HQ\nNakuru\nNyat House\nSamburu\nNairobi",
+   "reqd": 1
   },
   {
    "fieldname": "region",
-   "fieldtype": "Data",
-   "label": "Region"
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Region"
   },
   {
    "fieldname": "country",
-   "fieldtype": "Data",
-   "label": "Country"
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Adress"
   },
   {
    "fieldname": "posted_on",
    "fieldtype": "Date",
-   "label": "Posted On"
+   "label": "Posted On",
+   "reqd": 1
   },
   {
    "fieldname": "closed_on",
    "fieldtype": "Date",
-   "label": "Closed On"
+   "label": "Closed On",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_dbre",
@@ -62,12 +73,20 @@
   {
    "fieldname": "column_break_mgea",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Open\nClosed",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-13 23:33:32.515642",
+ "modified": "2026-02-28 16:15:49.894704",
  "modified_by": "Administrator",
  "module": "OneRC",
  "name": "Opportunity",
@@ -104,7 +123,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Applicant",
+   "role": "Vulonteer",
    "share": 1
   }
  ],

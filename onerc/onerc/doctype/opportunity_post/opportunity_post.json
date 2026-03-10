@@ -1,30 +1,27 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{profession}",
- "creation": "2026-02-28 15:54:34.883765",
+ "creation": "2026-02-28 16:36:08.685708",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "profession"
+  "posts"
  ],
  "fields": [
   {
-   "fieldname": "profession",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Profession",
-   "reqd": 1
+   "fieldname": "posts",
+   "fieldtype": "Link",
+   "label": "Posts",
+   "options": "Opportunity"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-01 01:47:23.565958",
+ "modified": "2026-02-28 16:36:40.179300",
  "modified_by": "Administrator",
  "module": "OneRC",
- "name": "Profession",
- "naming_rule": "Expression",
+ "name": "Opportunity post",
  "owner": "Administrator",
  "permissions": [
   {
@@ -38,27 +35,6 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Opportunity Manager",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Vulonteer",
-   "share": 1
   }
  ],
  "row_format": "Dynamic",

@@ -148,23 +148,14 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"onerc.tasks.all"
-# 	],
-# 	"daily": [
-# 		"onerc.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"onerc.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"onerc.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"onerc.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	"cron": {
+	"* * * * *": [
+		"onerc.Task.auto_close_expired_opportunities",
+        "onerc.Task.test"
+	]
+	}
+}
 
 # Testing
 # -------
